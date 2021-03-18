@@ -1,0 +1,139 @@
+@use 'base';
+@use 'animation';
+
+/*****************************************/
+/**************** TEXT *******************/
+/*****************************************/
+
+.siteTitle{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-siteTitle;
+    line-height: base.$line-height-siteTitle;
+}
+
+.pageTitle{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-pageTitle;
+    line-height: base.$line-height-pageTitle;
+}
+
+.sectionTitle{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-sectionTitle;
+    line-height: base.$line-height-sectionTitle;
+    @extend %transition-text-load;
+
+    &.animate{
+        opacity: 0; 
+    }
+}
+
+.textBig{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-textBig;
+    line-height: base.$line-height-textBig;
+}
+
+.textNormal{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-textNormal;
+    line-height: base.$line-height-textNormal;
+}
+
+.textSmall{
+    font-family: base.$font-family-primary;
+    font-size: base.$font-size-textSmall;
+    line-height: base.$line-height-textSmall;
+}
+
+/*****************************************/
+/************** DROPDOWN *****************/
+/*****************************************/
+
+.dropdown{
+    cursor: pointer;
+
+    > .dropdown-title{
+
+        span{
+            float: right;
+        }
+    }
+
+    > .dropdown-content{
+        display: none;
+    }
+
+    p, h4, h5{
+        @extend %transition-text-load;
+    }
+
+    &.animate{
+        p, h4, h5{
+            opacity: 0;
+        }
+    }
+}
+
+/*****************************************/
+/************** BLOCKBORDER **************/
+/*****************************************/
+
+$blockborder-height: 40rem;
+
+.blockborder{
+    height: $blockborder-height;
+    min-width: 20rem;
+    position: relative;
+
+    .blockborder-border{
+        height: $blockborder-height;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-color: base.$color-primary-100;
+        @extend %transition-blockborder-load;
+    }
+
+    .blockborder-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @extend %transition-text-load;
+    }
+
+    &.animate{
+        .blockborder-border{
+            height: 0;
+        }
+
+        .blockborder-content{
+            opacity: 0;
+        }
+    }
+}
+
+/*****************************************/
+/****************** INDEX ****************/
+/*****************************************/
+
+.index{
+    .index-title{
+        padding: .5rem 0;
+    }
+
+    .index-content{
+        .index-single{
+            padding: .5rem 0;
+            @extend %transition-index-load;
+        }
+    }
+
+    &.animate{
+        .index-content{
+            .index-single{
+                opacity: 0;
+            }
+        }
+    }
+}

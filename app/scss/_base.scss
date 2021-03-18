@@ -1,0 +1,152 @@
+// DEVICE 
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
+
+// FONT
+// Font Family
+$font-family-primary: Roboto, Helvetica, sans-serif;
+$font-family-secondary: arial, sans-serif;
+
+// Site Title
+$font-size-siteTitle: 32px;
+$line-height-siteTitle: 36px;
+
+// Page Title
+$font-size-pageTitle: 28px;
+$line-height-pageTitle: 32px;
+
+// Section Title
+$font-size-sectionTitle: 24px;
+$line-height-sectionTitle: 28px;
+
+// Big Text
+$font-size-textBig: 20px;
+$line-height-textBig: 24px;
+
+// Normal Text
+$font-size-textNormal: 16px;
+$line-height-textNormal: 16px;
+
+// Small Text
+$font-size-textSmall: 12px;
+$line-height-textSmall: 12px;
+
+@media only screen and (min-device-width: $breakpoint-mobile){
+
+    // Site Title
+    $font-size-siteTitle: 32px;
+    $line-height-siteTitle: 36px;
+
+    // Page Title
+    $font-size-pageTitle: 28px;
+    $line-height-pageTitle: 32px;
+
+    // Section Title
+    $font-size-sectionTitle: 24px;
+    $line-height-sectionTitle: 28px;
+
+    // Big Text
+    $font-size-textBig: 20px;
+    $line-height-textBig: 24px;
+
+    // Normal Text
+    $font-size-textNormal: 16px;
+    $line-height-textNormal: 16px;
+
+    // Small Text
+    $font-size-textSmall: 12px;
+    $line-height-textSmall: 12px;
+}
+
+@media only screen and (min-device-width: $breakpoint-tablet){
+
+    // Site Title
+    $font-size-siteTitle: 32px;
+    $line-height-siteTitle: 36px;
+
+    // Page Title
+    $font-size-pageTitle: 28px;
+    $line-height-pageTitle: 32px;
+
+    // Section Title
+    $font-size-sectionTitle: 24px;
+    $line-height-sectionTitle: 28px;
+
+    // Big Text
+    $font-size-textBig: 20px;
+    $line-height-textBig: 24px;
+
+    // Normal Text
+    $font-size-textNormal: 16px;
+    $line-height-textNormal: 16px;
+
+    // Small Text
+    $font-size-textSmall: 12px;
+    $line-height-textSmall: 12px;
+}
+
+@media only screen and (min-device-width: $breakpoint-desktop){
+
+    // Site Title
+    $font-size-siteTitle: 32px;
+    $line-height-siteTitle: 36px;
+
+    // Page Title
+    $font-size-pageTitle: 28px;
+    $line-height-pageTitle: 32px;
+
+    // Section Title
+    $font-size-sectionTitle: 24px;
+    $line-height-sectionTitle: 28px;
+
+    // Big Text
+    $font-size-textBig: 20px;
+    $line-height-textBig: 24px;
+
+    // Normal Text
+    $font-size-textNormal: 16px;
+    $line-height-textNormal: 16px;
+
+    // Small Text
+    $font-size-textSmall: 12px;
+    $line-height-textSmall: 12px;
+}
+
+// COLOR
+// Primary Color
+$color-primary-100: green;
+
+// Secondary Color
+$color-secondary-100: red;
+
+
+// MARGIN
+$margin-large: 32px;
+$margin-medium: 20px;
+$margin-small: 12px;
+
+@media only screen and (min-device-width: $breakpoint-mobile){
+
+    // MARGIN
+    $margin-large: 32px;
+    $margin-medium: 20px;
+    $margin-small: 12px;
+}
+
+@media only screen and (min-device-width: $breakpoint-tablet){
+
+    // MARGIN
+    $margin-large: 32px;
+    $margin-medium: 20px;
+    $margin-small: 12px;
+}
+
+@media only screen and (min-device-width: $breakpoint-desktop){
+
+    // MARGIN
+    $margin-large: 32px;
+    $margin-medium: 20px;
+    $margin-small: 12px;
+}

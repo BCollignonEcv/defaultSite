@@ -1,0 +1,32 @@
+@use 'base';
+@use 'layer';
+@use 'component';
+@use 'animation';
+
+/*****************************************/
+/***************** BASIC *****************/
+/*****************************************/
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: base.$font-family-primary;
+}
+
+.link{
+    transition: .3s ease-in-out;
+
+    &:hover{
+        color: base.$color-primary-100;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+}
+
+/********************* COLOR ***********************/
+
+.bg-primary{
+    background-color: base.$color-primary-100;
+}
+
+.bg-secondary{
+    background-color: base.$color-secondary-100;
+}

@@ -1,0 +1,21 @@
+%transition-text-load {
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+}
+
+%transition-index-load {
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+}
+
+%transition-blockborder-load {
+    transition-delay: height 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-property: height;
+    will-change: auto;
+}
